@@ -1,0 +1,122 @@
+@import url(fonts.css);
+
+* {
+    font-family: 'Inter', sans-serif; 
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #003CA3;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    display: flex;
+    flex: 1 1 550px;
+    min-height: 320px;
+    background: url('/assets/img/photo.png') bottom/contain no-repeat;
+}
+
+.form-sect {
+    flex: 1 1 650px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 9px;
+}
+
+.main {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+input, 
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    flex: 1 1 100%;
+    padding: .9rem 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.files {
+    display: flex;
+    width: 100%;
+} 
+
+.button {
+    background-color: #3578EA;
+    color: #FFF;
+    border: 1px solid #3578EA;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    transition: all .3s ease;
+    padding: .5rem 3rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #3578EA;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        background: linear-gradient(to bottom, #003CA3 50%, #ffffff 50%);
+    }
+    .row {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    
+}  
