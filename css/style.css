@@ -37,7 +37,6 @@ p {
 }
 
 .image {
-    display: flex;
     flex: 1 1 550px;
     min-height: 320px;
     background: url('/assets/img/photo.png') bottom/contain no-repeat;
